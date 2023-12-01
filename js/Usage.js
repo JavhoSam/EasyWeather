@@ -1,10 +1,7 @@
-//Import Data visualization on page function
-import ManageData from "./ViewData.js";
-
-export default function fetchData(key, url, lat, lon){
+export default function fetchUsage(url, key){
 
     //Make a request to a server with the given URL
-    fetch(url + "?lat=" + lat + "&lon=" + lon + "&key=" + key + "&lang=es")  
+    fetch(url + key)  
 
     //Check if the server responded or not
     .then(response => {
@@ -15,14 +12,12 @@ export default function fetchData(key, url, lat, lon){
         console.log("Llamada exitosa")
         return response.json();
     })
-
-    //Show fetch results on console
     .then(data => {
-        ManageData(data);
+        console.log(data);
       })
 
     //Catch any error on fetch function
     .catch(error => {
-        console.error('Error al obtener los datos del clima:', error);
+        console.error('Error al obtener los datos del uso:', error);
       });
 }

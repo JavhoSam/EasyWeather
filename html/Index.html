@@ -8,11 +8,23 @@
 </head>
 <body>
 
-    <section id="WeatherContainer" class="WeatherContainer">
-        <h1 id="CityLabel">Ciudad:</h1>
-        <h1 id="Temperature">Temperatura: </h1>
-        <h1 id="Weather">Clima: </h1>
+    <div id="Container" class="Container">
+    <section class="WeatherSection">
+        <h1 class="WeatherLabel">Clima de hoy <span id="WeekDaySpan" class="WeatherLabel"></span>:</h1>
     </section>
+
+    <section id="WeatherContainer" class="WeatherContainer">
+        <div class="WeatherLogo" id="WeatherLogo"><h2 id="WeatherLogoDescription" class="WeatherLogoLabel"></h2><img class="WeatherDescLogo" id = "WeatherDescLogo" src="" alt="Weather description image"></div>
+        <div class="WeatherLogo"><h2 class="WeatherLogoLabel">Celsius</h2><img class="TempLogo" src="../assets/TempeLogo.png"><h2 id="TemperatureLabel" class="TemperatureLabel"></h2></div>
+    </section>
+
+    <section class="ForecastContainer">
+        <div class="MiniWeatherLogo"><h2 class="MiniWeatherLogoLabel" id="Prec">Probabilidad de lluvia</h2><label class="dataLabel" id="PrecProp"></label></div>
+        <div class="MiniWeatherLogo"><h2 class="MiniWeatherLogoLabel" id="Term">Sensación térmica</h2>     <label class="dataLabel" id="TermSen"></label></div>
+        <div class="MiniWeatherLogo"><h2 class="MiniWeatherLogoLabel" id="Max">Max</h2>                    <label class="dataLabel" id="MaxTemp"></label></div>
+        <div class="MiniWeatherLogo"><h2 class="MiniWeatherLogoLabel" id="Min">Min</h2>                    <label class="dataLabel" id="MinTemp"></label></div>
+    </section>
+    </div>
 
 </body>
 </html>

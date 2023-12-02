@@ -8,8 +8,112 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+}  
+
+/*--------------------------------------------*/
+
+.Container{
+    display: table-column;
 }
+
+/*--------------------------------------------*/
+
+.WeatherSection{
+    height: 20vh;
+    width: 130vh;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WeatherLabel{
+    color: white;
+    font-family:'Gill Sans MT';
+    font-size: 8vh;
+}
+
+
+/*----------------------------------------------*/
 
 .WeatherContainer{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
 }
+
+.WeatherLogo{
+    border: 1px solid White;
+    border-radius: 15px;
+    width: 30vh;
+    height: 30vh;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WeatherLogoLabel{
+    margin-top:40vh;
+    color: white;
+    font-size: 4vh;
+    position: absolute;
+}
+
+.TempLogo{
+    width: 15vh;
+}
+
+.WeatherDescLogo{
+    width: 27vh;
+}
+
+.TemperatureLabel{
+    font-size: 8vh;
+    margin-left: 2vh;
+    font-family: 'Gill Sans MT';
+}
+
+/*----------------------------------*/
+
+.ForecastContainer{
+    margin-top: 15vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    margin-bottom: 15vh;
+}
+
+.MiniWeatherLogo{
+    border: 1px solid White;
+    border-radius: 25px;
+    width: 12vh;
+    height: 12vh;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MiniWeatherLogoLabel{
+    position: absolute;
+    margin-top: 20vh;
+    color: white;
+    font-size: 3vh;
+}
+
+.dataLabel{
+    position: absolute;
+    font-size: 6vh;
+    font-family:'Gill Sans MT';
+}
+
+#Prec, #Term{
+    font-size: 2vh;
+    position: relative;
+}
+
